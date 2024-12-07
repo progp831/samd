@@ -1,0 +1,89 @@
+/* Corps principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+    max-width: 90%; /* Largeur maximum relative pour les petits écrans */
+    width: 600px; /* Largeur maximale */
+    margin: 100px auto; /* Centre la boîte */
+    padding: 20px;
+    background-color: #1a1a1a; /* Boîte avec un gris très foncé */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Ombre subtile */
+    border-radius: 10px; /* Coins arrondis */
+    border: 1px solid #333; /* Bordure subtile */
+}
+
+/* Titre principal */
+h1 {
+    color: #ff6b6b; /* Texte en rouge doux */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Paragraphe */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Bouton */
+button {
+    background-color: #ff6b6b; /* Bouton rouge doux */
+    color: #ffffff; /* Texte blanc */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s; /* Effet de transition */
+}
+
+/* Effet au survol */
+button:hover {
+    background-color: #e55b5b; /* Couleur plus foncée au survol */
+}
+
+/* Adaptation aux écrans moyens */
+@media (max-width: 768px) {
+    .container {
+        margin: 50px auto; /* Réduit les marges */
+        padding: 15px; /* Réduit l'espace interne */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Réduit la taille du titre */
+    }
+
+    p {
+        font-size: 1em; /* Réduit la taille du texte */
+    }
+
+    button {
+        padding: 8px 15px; /* Bouton plus compact */
+        font-size: 0.9em; /* Réduit la taille du bouton */
+    }
+}
+
+/* Adaptation pour les très petits écrans */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Réduit encore la taille du titre */
+    }
+
+    p {
+        font-size: 0.9em; /* Texte plus petit */
+    }
+
+    button {
+        font-size: 0.8em; /* Bouton encore plus compact */
+        padding: 7px 12px;
+    }
+}
